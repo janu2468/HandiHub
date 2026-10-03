@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Order Successful - HandiHub</title>
+
+    <link rel="stylesheet"
+          href="order-success.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     CONFETTI
+========================================= -->
+
+<div id="confetti-container"></div>
+
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="success-header">
+
+    <div class="logo">
+
+        <img
+            src="images/logo.png"
+            alt="HandiHub Logo"
+        >
+
+        <h2>HandiHub</h2>
+
+    </div>
+
+
+    <a href="index.html"
+       class="home-link">
+
+        <i class="bi bi-house"></i>
+
+        Home
+
+    </a>
+
+</header>
+
+
+
+<!-- =========================================
+     SUCCESS PAGE
+========================================= -->
+
+<main class="success-container">
+
+
+    <div class="success-card">
+
+
+        <!-- SUCCESS ICON -->
+
+        <div class="success-icon">
+
+            <i class="bi bi-check-lg"></i>
+
+        </div>
+
+
+        <p class="success-label">
+            ORDER CONFIRMED
+        </p>
+
+
+        <h1>
+            Order Placed Successfully!
+        </h1>
+
+
+        <p class="success-message">
+
+            Thank you for supporting our artisans.
+            Your handmade product is on its way to you.
+
+        </p>
+
+
+
+        <!-- =================================
+             ORDER DETAILS
+        ================================= -->
+
+        <div class="order-details">
+
+
+            <div class="order-id">
+
+                <span>
+                    Order ID
+                </span>
+
+                <strong id="orderId">
+                    --
+                </strong>
+
+            </div>
+
+
+
+            <div class="product-section">
+
+                <div class="product-image">
+
+                    <img
+                        id="productImage"
+                        src=""
+                        alt="Ordered Product"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <h3 id="productTitle">
+                        Product
+                    </h3>
+
+
+                    <p id="productCategory">
+                        Handmade Product
+                    </p>
+
+
+                    <div class="product-meta">
+
+                        <span>
+                            Qty:
+                            <strong id="productQuantity">
+                                1
+                            </strong>
+                        </span>
+
+
+                        <span
+                            id="productPrice">
+                            ₹0
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TOTAL -->
+
+            <div class="order-total">
+
+                <span>
+                    Total Paid
+                </span>
+
+                <strong id="orderTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================
+             DELIVERY MESSAGE
+        ================================= -->
+
+        <div class="delivery-box">
+
+            <div class="delivery-icon">
+
+                <i class="bi bi-truck"></i>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Your order is on its way!
+                </h3>
+
+                <p>
+                    We'll keep you updated about
+                    your delivery.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================
+             BUTTONS
+        ================================= -->
+
+        <div class="success-actions">
+
+            <button
+                class="primary-btn"
+                onclick="continueShopping()"
+            >
+
+                <i class="bi bi-bag"></i>
+
+                Continue Shopping
+
+            </button>
+
+
+            <button
+                class="secondary-btn"
+                onclick="viewOrder()"
+            >
+
+                <i class="bi bi-box-seam"></i>
+
+                View Order
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<script src="order-success.js"></script>
+
+</body>
+
+</html>

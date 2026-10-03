@@ -1,0 +1,1163 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#F8F5EF;
+
+    font-family:'Inter',sans-serif;
+
+    color:#1d1d1d;
+       margin:0;
+      overflow-x:hidden;
+
+}
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ==========================
+   FIXED SIDEBAR
+========================== */
+
+.sidebar{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 280px;
+
+    height: 100vh;
+
+    background: #ffffff;
+
+    border-right: 1px solid #ece7df;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 28px 22px;
+
+    overflow-y: auto;
+
+    z-index: 1000;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:-120px;
+
+}
+
+.logo img{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+}
+
+.logo h2{
+
+   font-family:"Fraunces", serif;
+
+    font-size:22px;
+
+    font-weight:500px;
+
+    color:#16361E;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.menu{
+
+    list-style:none;
+    
+
+}
+
+.menu li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:16px 18px;
+
+    margin-bottom:12px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.menu li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.menu li.active{
+
+    background:#2F5D39;
+
+}
+
+.menu li.active a{
+
+    color:#fff;
+
+}
+
+.menu li.active i{
+
+    color:#fff;
+
+}
+
+
+/* ===========================
+   BOTTOM MENU
+=========================== */
+
+.bottom-menu{
+
+    margin-top:80px;
+
+}
+
+.bottom-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:#555;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.bottom-menu a i{
+
+    font-size:20px;
+
+}
+
+.bottom-menu a:hover{
+
+    color:#2F5D39;
+
+}
+
+/* ===========================
+   main bars
+=========================== */
+.main-content{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+   TOPBAR
+=========================== */
+
+.topbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:#ffffff;
+
+    height:86px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 38px;
+
+    border-bottom:1px solid #ebe5dd;
+
+}
+
+.topbar h2{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:25px;
+
+    font-weight:400;
+
+}
+
+/* ===========================
+   RIGHT ICONS
+=========================== */
+
+.top-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+}
+
+.top-icons i{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+.profile{
+
+    width:42px;
+
+    height:42px;
+
+    background:#355E3B;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   GREETING
+=========================== */
+
+.greeting{
+
+    padding:35px 38px 20px;
+
+}
+
+.greeting h1{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#1B1B1B;
+
+    margin-bottom:8px;
+
+}
+
+.greeting h1 span{
+
+    font-size:25px;
+
+}
+
+.greeting p{
+
+    font-size:16px;
+
+    color:#757575;
+
+    font-weight:400;
+
+}
+/*=========================================
+        STATISTICS SECTION
+=========================================*/
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    padding:0 38px 35px;
+
+}
+
+/*=========================================
+        CARD
+=========================================*/
+
+.card{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border:1px solid #E8E2D9;
+
+    border-radius:28px;
+
+    padding:26px;
+
+    min-height:170px;
+
+    transition:0.35s ease;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+/*=========================================
+        ICON
+=========================================*/
+
+.card .icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#EEF3ED;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+}
+
+.card .icon i{
+
+    font-size:16px;
+
+    color:#315A39;
+
+}
+
+/*=========================================
+        GROWTH
+=========================================*/
+
+.growth{
+
+    position:absolute;
+
+    top:28px;
+
+    right:28px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#2F7D4A;
+
+}
+
+/*=========================================
+        REVENUE NUMBER
+=========================================*/
+
+.card h2{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    color:#111111;
+
+    margin-bottom:8px;
+
+    line-height:1;
+
+}
+
+/*=========================================
+        DESCRIPTION
+=========================================*/
+
+.card p{
+
+    font-size:16px;
+
+    color:#8A8A8A;
+
+    font-weight:400;
+
+}
+
+/*=========================================
+        CARD EFFECT
+=========================================*/
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#2F5D39,#6E9B72);
+
+    transform:scaleX(0);
+
+    transition:.35s;
+
+}
+
+.card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+/*=========================================
+        CARD SHADOW
+=========================================*/
+
+.card{
+
+    box-shadow:
+
+    0 6px 18px rgba(0,0,0,.04);
+
+}
+
+/*=========================================
+        SMALL ANIMATION
+=========================================*/
+
+.card:hover .icon{
+
+    transform:scale(1.08);
+
+    transition:.35s;
+
+}
+
+.card:hover h2{
+
+    color:#2F5D39;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.stats{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+.card{
+
+padding:24px;
+
+}
+
+.card h2{
+
+font-size:20px;
+
+}
+
+.card p{
+
+font-size:16px;
+
+}
+
+}
+/*=========================================
+        CHART SECTION
+=========================================*/
+
+.chart-section{
+
+    display:grid;
+
+    grid-template-columns:3fr 1fr;
+
+    gap:24px;
+
+    padding:0 38px 40px;
+
+}
+
+/*=========================================
+        GRAPH CARD
+=========================================*/
+
+.graph-card{
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:28px;
+
+    border:1px solid #E9E4DD;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.graph-head{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.graph-head h2{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    color:#1f1f1f;
+
+    margin-bottom:5px;
+
+}
+
+.graph-head p{
+
+    font-size:14px;
+
+    color:#8b8b8b;
+
+}
+
+.graph-head span{
+
+    background:#EDF7EF;
+
+    color:#2F7D4A;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+#revenueChart{
+
+    width:100%;
+
+    height:340px !important;
+
+}
+
+/*=========================================
+        ACTIVITY CARD
+=========================================*/
+
+.activity-card{
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    border:1px solid #E9E4DD;
+
+    padding:28px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.activity-card h2{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    margin-bottom:28px;
+
+}
+
+.activity-card ul{
+
+    list-style:none;
+
+}
+
+.activity-card li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    margin-bottom:26px;
+
+}
+
+.activity-card li:last-child{
+
+    margin-bottom:0;
+
+}
+
+/*=========================================
+        DOT
+=========================================*/
+
+.dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#3C8C54;
+
+    margin-top:8px;
+
+    flex-shrink:0;
+
+}
+
+/*=========================================
+        ACTIVITY TEXT
+=========================================*/
+
+.activity-card h4{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+    color:#222;
+
+}
+
+.activity-card p{
+
+    font-size:12px;
+
+    color:#8a8a8a;
+
+}
+
+/*=========================================
+        HOVER
+=========================================*/
+
+.graph-card:hover,
+
+.activity-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:.35s;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+.chart-section{
+
+grid-template-columns:1fr;
+
+}
+
+.activity-card{
+
+margin-top:5px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+
+padding:0 20px;
+
+}
+
+.greeting{
+
+padding:25px 20px;
+
+}
+
+.chart-section{
+
+padding:20px;
+
+}
+
+.graph-card,
+
+.activity-card{
+
+padding:20px;
+
+}
+
+.graph-head{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.graph-head h2{
+
+font-size:28px;
+
+}
+
+.activity-card h2{
+
+font-size:28px;
+
+}
+
+#revenueChart{
+
+height:260px !important;
+
+}
+
+}
+/*=========================================
+        QUICK ACTIONS
+=========================================*/
+
+.quick-actions{
+
+    background:#ffffff;
+
+    border:1px solid #E8E2D9;
+
+    border-radius:28px;
+
+    padding:28px 30px;
+
+    margin:35px 38px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.04);
+
+}
+
+/*=========================================
+        HEADER
+=========================================*/
+
+.quick-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.quick-header h2{
+
+    font-family:'DM Serif Display',serif;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    color:#1D1D1D;
+
+}
+
+.quick-header a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    text-decoration:none;
+
+    color:#2F5D39;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.quick-header a:hover{
+
+    color:#21462A;
+
+}
+
+/*=========================================
+        GRID
+=========================================*/
+
+.quick-grid{
+
+    display:grid;
+
+     grid-template-columns:repeat(3,minmax(0,1fr));
+
+    gap:18px;
+
+}
+
+/*=========================================
+        CARD
+=========================================*/
+
+.quick-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 20px;
+
+    border:1px solid #E8E2D9;
+
+    border-radius:22px;
+
+    text-decoration:none;
+
+    background:#fff;
+
+    transition:.35s ease;
+
+    min-height:110px;
+
+}
+
+.quick-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border-color:#2F5D39;
+
+}
+
+/*=========================================
+        ICON
+=========================================*/
+
+.quick-icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#2F5D39;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.quick-icon i{
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+/*=========================================
+        CONTENT
+=========================================*/
+
+.quick-content{
+
+    flex:1;
+
+}
+
+.quick-content h3{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#111;
+
+    margin-bottom:5px;
+
+    line-height:1.3;
+
+}
+
+.quick-content p{
+
+    font-size:13px;
+
+    color:#707070;
+
+    line-height:1.5;
+
+}
+
+/*=========================================
+        HOVER EFFECT
+=========================================*/
+
+.quick-card:hover .quick-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+    transition:.3s;
+
+}
+
+.quick-card:hover h3{
+
+    color:#2F5D39;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:1100px){
+
+    .quick-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .quick-actions{
+
+        margin:20px;
+
+        padding:20px;
+
+    }
+
+    .quick-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+    .quick-card{
+
+        padding:16px;
+
+        min-height:95px;
+
+    }
+
+    .quick-icon{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+    .quick-icon i{
+
+        font-size:20px;
+
+    }
+
+    .quick-content h3{
+
+        font-size:15px;
+
+    }
+
+    .quick-content p{
+
+        font-size:12px;
+
+    }
+
+}

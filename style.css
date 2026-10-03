@@ -1,0 +1,2139 @@
+/* ===========================
+   HEADER
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    background:#f8f6f2;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    height:82px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* ================= LOGO ================= */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo h2{
+    font-size:25px;
+    color:#8B5E3C;
+    font-family:"Fraunces", serif;
+    font-weight:650;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box{
+    width:420px;
+    display:flex;
+    align-items:center;
+}
+
+.search-box input{
+    width:100%;
+    height:46px;
+    padding:0 18px;
+    border:1px solid #ddd;
+    border-radius:25px;
+    outline:none;
+    font-size:15px;
+    background:#fafafa;
+    transition:.3s;
+     font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.search-box input:focus{
+    border-color:#8B5E3C;
+    background:#fff;
+}
+
+/* Hide old search button */
+.search-box button{
+    display:none;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#555;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+nav ul li a:hover{
+    color:#8B5E3C;
+}
+
+/* Active Menu */
+
+nav ul li:first-child a{
+    background:#f5efe8;
+    color:#8B5E3C;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.header-icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/* Seller Button */
+
+.header-icons button{
+    height:42px;
+    padding:0 20px;
+    border:none;
+    border-radius:25px;
+    background:#8B5E3C;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.header-icons button:hover{
+    background:#6d4528;
+}
+
+/* Icons */
+
+.header-icons a{
+    color:#333;
+    font-size:22px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.header-icons a:hover{
+    color:#8B5E3C;
+}
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+    background:#f8f6f2;
+}
+
+/* Hero Content */
+
+.hero-content{
+    width:50%;
+}
+
+.hero-content h1{
+    font-size:52px;
+    color:#5e3b25;
+    margin-bottom:20px;
+     font-family:"Fraunces", ui-serif, Georgia, serif;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+     font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+/*tag*/
+
+.hero-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 20px;
+
+    background:#F8F3EC;
+    color:#8B5E3C;
+
+    border:1px solid #E7D7C9;
+    border-radius:50px;
+
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:0.5px;
+
+    margin-bottom:22px;
+
+    box-shadow:0 4px 12px rgba(139,94,60,0.08);
+
+    transition:all 0.3s ease;
+}
+
+.hero-tag:hover{
+    background:#8B5E3C;
+    color:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(139,94,60,0.25);
+}
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    margin-top:35px;
+}
+
+.hero-buttons button{
+    padding:15px 32px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:50px;
+    cursor:pointer;
+    transition:all 0.35s ease;
+    border:none;
+}
+
+/* Explore Button */
+
+.hero-buttons .primary-btn{
+    background:#8B5E3C;
+    color:#fff;
+    box-shadow:0 8px 20px rgba(139,94,60,0.25);
+}
+
+.hero-buttons .primary-btn:hover{
+    background:#6E4427;
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(139,94,60,0.35);
+}
+
+/* Seller Button */
+
+.hero-buttons .secondary-btn{
+    background:#fff;
+    color:#000000;
+}
+
+.hero-buttons .secondary-btn:hover{
+    background:#fff;
+    box-shadow:0 10px 25px rgba(139,94,60,0.20);
+}
+
+.hero-buttons button:active{
+    transform:scale(0.97);
+}
+
+/* Hero Image */
+
+.hero-image{
+    width:50%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:570px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+/* ================= FEATURES ================= */
+
+.features{
+    max-width:1400px;
+    margin:60px auto;
+    padding:22px 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:150px;
+
+    background:#fff;
+    border:1px solid #E8D9C8;
+    border-radius:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+/* Each Feature */
+
+.feature-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+/* Icon Circle */
+
+.feature-icon{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:#F6EBDD;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Bootstrap Icon */
+
+.feature-icon i{
+    font-size:20px;
+    color:#C9784C;
+}
+
+/* Text */
+
+.feature-text h3{
+    font-size:16px;
+    font-weight:600;
+    color:#2B2B2B;
+    margin-bottom:3px;
+}
+
+.feature-text p{
+    font-size:13px;
+    color:#777;
+}
+
+/* ================= SHOP BY CATEGORY ================= */
+
+.categories{
+    width:100%;
+    padding:80px 70px;
+    background:#f8f6f2;
+}
+
+/* Header */
+
+.category-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:40px;
+}
+
+.category-header h2{
+    font-size:42px;
+    font-family:"Fraunces", serif;
+    font-weight:700;
+    color:#1f1f1f;
+    margin-bottom:8px;
+}
+
+.category-header p{
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    color:#666;
+}
+
+.view-all{
+    text-decoration:none;
+    font-size:16px;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    color:#24472E;
+    font-weight:500;
+    transition:.3s;
+}
+
+.view-all:hover{
+    color:#8B5E3C;
+}
+
+/* Category Row */
+
+.category-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:18px;
+}
+
+/* Card */
+
+.category-card{
+    text-align:center;
+    cursor:pointer;
+}
+
+/* Circle */
+
+.category-image{
+    width:175px;
+    height:175px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#F8F2E9;
+    border:10px solid #F3E9DB;
+    transition:.35s;
+}
+
+.category-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.35s;
+}
+
+.category-card h3{
+    margin-top:18px;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    font-weight:500;
+    color:#111;
+}
+
+/* Hover */
+
+.category-card:hover .category-image{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+}
+
+.category-card:hover img{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   TRENDING PRODUCTS
+=========================== */
+
+.trending{
+    width:100%;
+    padding:80px 70px;
+    background:#f8f6f2;
+}
+
+/* Header */
+
+.trending-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:40px;
+}
+
+.trending-header h2{
+    font-size:42px;
+    font-family:"Fraunces", serif;
+    color:#1f1f1f;
+    margin-bottom:8px;
+}
+
+.trending-header p{
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    color:#666;
+}
+
+.view-all{
+    text-decoration:none;
+    color:#000000;
+     font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    font-weight:500;
+}
+
+.view-all i{
+    margin-left:6px;
+}
+
+/* Product Grid */
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+/* Card */
+
+.product-card{
+    background:#fff;
+    border:1px solid #e8ded3;
+    border-radius:26px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+/* Image */
+
+.product-image{
+    position:relative;
+    height:250px;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+    position:relative;
+    z-index:1;
+}
+
+/* Product Info */
+
+.product-info{
+    padding:22px 24px;
+}
+
+/* Category */
+
+.category{
+    font-size:12px;
+    color:#6f6f6f;
+    letter-spacing:1px;
+    margin-bottom:12px;
+}
+
+/* Product Name */
+
+.product-info h3{
+    font-size:20px;
+    font-family:"Fraunces", serif;
+    color:#1b1b1b;
+    margin-bottom:14px;
+    line-height:1.4;
+}
+
+/* Rating */
+
+.rating{
+    color:#555;
+    font-size:14px;
+    margin-bottom:22px;
+}
+
+/* Price */
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.new-price{
+    font-size:18px;
+    font-weight:700;
+    color:#1F4A37;
+}
+
+.old-price{
+    margin-left:10px;
+    color:#888;
+    text-decoration:line-through;
+    font-size:16px;
+}
+
+/* Wishlist */
+
+.wishlist{
+    position:absolute;
+    top:15px;
+    right:15px;
+    z-index:10;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+}
+
+.wishlist i{
+    font-size:20px;
+    color:#333;
+}
+.wishlist-nav{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:#222;
+    text-decoration:none;
+}
+
+#wishlistCount{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    background:#e63946;
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    min-width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 5px;
+}
+
+.wishlist.active i,
+.wishlist-btn.active i{
+    color:#e63946;
+}
+
+/* Cart Button */
+
+.cart-btn{
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+    border:1px solid #ddd;
+
+    background:#fff;
+    cursor:pointer;
+}
+
+.cart-btn i{
+    font-size:18px;
+    color:#333;
+}
+.cart-nav{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:#222;
+    text-decoration:none;
+}
+
+#cartCount{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    background:#2F5A3C;
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    min-width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 5px;
+}
+/* Cart button active - GREEN */
+.cart-btn.active,
+.bag-btn.active {
+    background: #2F5A3C;
+    border-color: #2F5A3C;
+}
+
+.cart-btn.active i,
+.bag-btn.active i {
+    color: #fff;
+}
+/* Badges */
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:10;
+
+    padding:8px 16px;
+    border-radius:30px;
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+}
+
+.discount{
+    background:#D36C44;
+}
+
+.bestseller{
+    background:#2B211B;
+}
+
+.new{
+    background:#1F4A37;
+}
+
+/* ===========================
+   HOVER EFFECTS
+=========================== */
+
+/* Product Card Hover */
+
+.product-card{
+    transition:all .35s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+/* Image Zoom */
+
+.product-card:hover .product-image img{
+    transform:scale(1.08);
+}
+
+/* Wishlist Button */
+
+.wishlist{
+    transition:.3s;
+}
+
+.wishlist:hover{
+    background:#8B5E3C;
+}
+
+.wishlist:hover i{
+    color:#fff;
+}
+
+/* Cart Button */
+
+.cart-btn{
+    transition:.3s;
+}
+
+.cart-btn:hover{
+    background:#8B5E3C;
+    border-color:#8B5E3C;
+}
+
+.cart-btn:hover i{
+    color:#fff;
+}
+
+/* View All */
+
+.view-all{
+    transition:.3s;
+}
+
+.view-all:hover{
+    color:#8B5E3C;
+}
+
+.view-all i{
+    transition:.3s;
+}
+
+.view-all:hover i{
+    transform:translateX(6px);
+}
+
+/* Product Name */
+
+.product-info h3{
+    transition:.3s;
+}
+
+.product-card:hover h3{
+    color:#8B5E3C;
+}
+
+/* Price */
+
+.new-price{
+    transition:.3s;
+}
+
+.product-card:hover .new-price{
+    color:#8B5E3C;
+}
+
+/* Badge */
+
+.badge{
+    transition:.3s;
+}
+
+.product-card:hover .badge{
+    transform:scale(1.05);
+}
+
+/* Smooth */
+
+.product-image,
+.product-info,
+.badge,
+.wishlist,
+.cart-btn,
+.product-info h3,
+.new-price{
+    transition:all .3s ease;
+}
+
+/* ===========================
+   NEW ARRIVALS
+=========================== */
+
+.new-arrivals{
+    width:100%;
+    padding:80px 70px;
+    background:#f8f6f2;
+}
+
+/* Header */
+
+.new-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:40px;
+}
+
+.new-header h2{
+    font-size:42px;
+    font-family:"Fraunces", serif;
+    color:#1f1f1f;
+    margin-bottom:8px;
+}
+
+.new-header p{
+    font-size:16px;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    color:#666;
+}
+
+/* View All */
+
+.view-all{
+    text-decoration:none;
+    color:#000000;
+    font-size:16px;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    font-weight:500;
+}
+
+.view-all i{
+    margin-left:6px;
+}
+
+/* Products */
+
+.new-products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+/* Card */
+
+.new-card{
+    background:#fff;
+    border:1px solid #e8ded3;
+    border-radius:28px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+/* Image */
+
+.new-image{
+    position:relative;
+    height:250px;
+    overflow:hidden;
+}
+
+.new-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+    position:relative;
+    z-index:1;
+}
+
+/* Product Info */
+
+.new-info{
+    padding:24px;
+}
+
+/* Category */
+
+.product-category{
+    font-size:12px;
+    letter-spacing:1px;
+    color:#666;
+    margin-bottom:12px;
+}
+
+/* Product Name */
+
+.new-info h3{
+    font-size:20px;
+    font-family:"Fraunces", serif;
+    color:#1f1f1f;
+    margin-bottom:14px;
+    line-height:1.4;
+}
+
+/* Rating */
+
+.product-rating{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#666;
+    font-size:14px;
+    margin-bottom:24px;
+}
+
+.product-rating i{
+    color:#F4B400;
+    font-size:14px;
+}
+
+/* Price */
+
+.product-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.current-price{
+    font-size:18px;
+    font-weight:700;
+    color:#1F4A37;
+}
+
+.old-price{
+    margin-left:10px;
+    text-decoration:line-through;
+    color:#888;
+    font-size:16px;
+}
+
+/* Wishlist */
+
+.wishlist-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    z-index:10;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+}
+
+.wishlist-btn i{
+    font-size:20px;
+    color:#333;
+}
+
+/* Bag */
+
+.bag-btn{
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+    border:1px solid #ddd;
+
+    background:#fff;
+    cursor:pointer;
+}
+
+.bag-btn i{
+    font-size:18px;
+    color:#333;
+}
+
+/* Badges */
+
+.new-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:10;
+
+    padding:8px 16px;
+    border-radius:30px;
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+}
+
+.green{
+    background:#244D36;
+}
+
+.dark{
+    background:#2D241E;
+}
+
+/* ===========================
+   PREMIUM HOVER EFFECTS
+=========================== */
+
+/* Card Hover */
+
+.new-card{
+    transition:all .35s ease;
+}
+
+.new-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+/* Image Zoom */
+
+.new-card:hover .new-image img{
+    transform:scale(1.08);
+}
+
+/* Wishlist Button */
+
+.wishlist-btn{
+    transition:.3s;
+}
+
+.wishlist-btn:hover{
+    background:#8B5E3C;
+}
+
+.wishlist-btn:hover i{
+    color:#fff;
+}
+
+/* Bag Button */
+
+.bag-btn{
+    transition:.3s;
+}
+
+.bag-btn:hover{
+    background:#8B5E3C;
+    border-color:#8B5E3C;
+}
+
+.bag-btn:hover i{
+    color:#fff;
+}
+
+/* Product Title */
+
+.new-info h3{
+    transition:.3s;
+}
+
+.new-card:hover .new-info h3{
+    color:#8B5E3C;
+}
+
+/* Price */
+
+.current-price{
+    transition:.3s;
+}
+
+.new-card:hover .current-price{
+    color:#8B5E3C;
+}
+
+/* Badge */
+
+.new-badge{
+    transition:.3s;
+}
+
+.new-card:hover .new-badge{
+    transform:scale(1.08);
+}
+
+/* View All */
+
+.view-all{
+    transition:.3s;
+}
+
+.view-all:hover{
+    color:#8B5E3C;
+}
+
+.view-all i{
+    transition:.3s;
+}
+
+.view-all:hover i{
+    transform:translateX(6px);
+}
+
+/* Smooth Transition */
+
+.new-image,
+.new-info,
+.new-badge,
+.wishlist-btn,
+.bag-btn,
+.current-price,
+.new-info h3{
+    transition:all .3s ease;
+}
+
+/* Cursor */
+
+.new-card,
+.wishlist-btn,
+.bag-btn{
+    cursor:pointer;
+}
+
+/* ===========================
+   WHY CHOOSE HANDIHUB
+=========================== */
+
+.why-handihub{
+    width:100%;
+    padding:80px 70px 50px;
+    background:#f8f6f2;
+}
+
+/* Heading */
+
+.why-header{
+    margin-bottom:40px;
+}
+
+.why-header h2{
+    font-family:"Fraunces",serif;
+    font-size:42px;
+    font-weight:700;
+    color:#1E1E1E;
+    margin-bottom:8px;
+}
+
+.why-header p{
+    font-family:"Plus Jakarta Sans",sans-serif;
+    font-size:16px;
+    color:#666;
+}
+
+/* Cards */
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    background:#fff;
+    border:1px solid #E6D8C8;
+    border-radius:30px;
+    padding:32px;
+    min-height:220px;
+}
+
+/* Number Circle */
+
+.number-circle{
+    width:52px;
+    height:52px;
+
+    background:#2F5A3C;
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+    font-size:16px;
+    font-weight:600;
+
+    margin-bottom:22px;
+}
+
+/* Title */
+
+.why-card h3{
+    font-family:"Fraunces",serif;
+    font-size:22px;
+    color:#1F1F1F;
+    margin-bottom:14px;
+}
+
+/* Text */
+
+.why-card p{
+    font-family:"Plus Jakarta Sans",sans-serif;
+    font-size:16px;
+    line-height:1.7;
+    color:#666;
+}
+
+/* ===========================
+   IMPACT SECTION
+=========================== */
+
+.impact{
+    padding:30px 70px 50px;
+    background:#f8f6f2;
+}
+
+.impact-content{
+
+    background:#2F5A3C;
+
+    border-radius:34px;
+
+       padding:45px 55px;
+
+    color:#fff;
+}
+
+/* Tag */
+
+.impact-tag{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:17px;
+
+    letter-spacing:1px;
+
+    color:#ffffff;
+
+    display:block;
+
+    margin-bottom:18px;
+}
+
+/* Heading */
+
+.impact-content h2{
+
+    font-family: 'Lora', serif;
+
+    font-size:42px;
+
+    line-height:1.2;
+
+    max-width:720px;
+
+    margin-bottom:70px;
+}
+
+/* Stats */
+
+.impact-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+}
+
+/* Stat */
+
+.stat-box h3{
+
+     font-family: 'Lora', serif;
+
+    font-size:42px;
+
+    margin-bottom:12px;
+
+    color:#fff;
+}
+
+.stat-box p{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:16px;
+
+    color:#E8E8E8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.why-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.impact-stats{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-header h2{
+
+font-size:40px;
+
+}
+
+.impact-content h2{
+
+font-size:42px;
+
+}
+
+.why-container{
+
+grid-template-columns:1fr;
+
+}
+
+.impact-stats{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.impact-content{
+
+padding:45px 30px;
+
+}
+
+}
+
+/* ===========================
+   TESTIMONIAL SECTION
+=========================== */
+
+.testimonial-section{
+    width:100%;
+    padding:80px 70px 50px;
+    background:#f8f6f2;
+}
+
+/* Heading */
+
+.testimonial-heading h2{
+    font-family:"Fraunces",serif;
+    font-size:42px;
+    color:#1F1F1F;
+    margin-bottom:45px;
+}
+
+/* Cards */
+
+.testimonial-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+/* Card */
+
+.testimonial-card{
+
+    background:#fff;
+
+    border:1px solid #E8D9C8;
+
+    border-radius:30px;
+
+    padding:32px;
+
+    min-height:250px;
+
+    transition:.35s;
+}
+
+/* Quote */
+
+.quote{
+    margin-bottom:20px;
+}
+
+.quote i{
+    font-size:34px;
+    color:#C9784C;
+}
+
+/* Review */
+
+.review{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#222;
+
+    margin-bottom:22px;
+}
+
+/* Stars */
+
+.stars{
+    margin-bottom:22px;
+}
+
+.stars i{
+    color:#F4A300;
+    font-size:17px;
+    margin-right:3px;
+}
+
+/* Name */
+
+.testimonial-card h4{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:22px;
+
+    color:#111;
+
+    font-weight:600;
+}
+
+.testimonial-card span{
+
+    color:#666;
+
+    font-weight:400;
+}
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+
+.newsletter{
+
+    padding:35px 70px 80px;
+
+    background:#f8f6f2;
+}
+
+.newsletter-content{
+
+    background:#F6EBDD;
+
+    border-radius:36px;
+
+    padding:60px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+}
+
+/* Left */
+
+.newsletter-text{
+
+    width:45%;
+}
+
+.newsletter-text h2{
+
+    font-family:"Fraunces",serif;
+
+    font-size:42px;
+
+    color:#1F1F1F;
+
+    margin-bottom:18px;
+}
+
+.newsletter-text p{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:16px;
+
+    color:#555;
+
+    line-height:1.7;
+}
+
+/* Right */
+
+.newsletter-form{
+
+    width:45%;
+
+    background:#fff;
+
+    border-radius:50px;
+
+    padding:5px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+/* Input */
+
+.newsletter-form input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    padding:18px 22px;
+
+    font-size:14px;
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    background:transparent;
+}
+
+/* Button */
+
+.newsletter-form button{
+
+    border:none;
+
+    background:#2F5A3C;
+
+    color:#fff;
+
+    padding:16px 34px;
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+/* ===========================
+   PREMIUM HOVER EFFECTS
+=========================== */
+
+/* Smooth Transition */
+
+.testimonial-card,
+.newsletter-content,
+.newsletter-form,
+.newsletter-form button,
+.newsletter-form input{
+    transition:all .35s ease;
+}
+
+/* ===========================
+   TESTIMONIAL CARD
+=========================== */
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+    border-color:#2F5A3C;
+}
+
+/* Quote */
+
+.quote i{
+
+    transition:.3s;
+}
+
+.testimonial-card:hover .quote i{
+
+    color:#8B5E3C;
+
+    transform:scale(1.1);
+}
+
+/* Review */
+
+.review{
+
+    transition:.3s;
+}
+
+.testimonial-card:hover .review{
+
+    color:#333;
+}
+
+/* Name */
+
+.testimonial-card h4{
+
+    transition:.3s;
+}
+
+.testimonial-card:hover h4{
+
+    color:#8B5E3C;
+}
+
+/* Stars */
+
+.stars i{
+
+    transition:.3s;
+}
+
+.testimonial-card:hover .stars i{
+
+    transform:scale(1.1);
+}
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+
+.newsletter-content:hover{
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+/* Input */
+
+.newsletter-form{
+
+    transition:.3s;
+}
+
+.newsletter-form:focus-within{
+
+    box-shadow:0 0 0 4px rgba(47,90,60,.12);
+}
+
+/* Button */
+
+.newsletter-form button{
+
+    transition:.3s;
+}
+
+.newsletter-form button:hover{
+
+    background:#8B5E3C;
+
+    transform:translateY(-2px);
+}
+
+/* Placeholder */
+
+.newsletter-form input::placeholder{
+
+    color:#999;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+.testimonial-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.newsletter-content{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.newsletter-text{
+
+width:100%;
+
+}
+
+.newsletter-form{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.testimonial-heading h2{
+
+font-size:40px;
+
+}
+
+.testimonial-container{
+
+grid-template-columns:1fr;
+
+}
+
+.newsletter{
+
+padding:30px 20px 60px;
+
+}
+
+.newsletter-content{
+
+padding:40px 25px;
+
+}
+
+.newsletter-text h2{
+
+font-size:40px;
+
+}
+
+.newsletter-text p{
+
+font-size:16px;
+
+}
+
+.newsletter-form{
+
+flex-direction:column;
+
+gap:15px;
+
+border-radius:25px;
+
+padding:18px;
+
+}
+
+.newsletter-form input{
+
+padding:14px;
+
+}
+
+.newsletter-form button{
+
+width:100%;
+
+padding:15px;
+
+border-radius:30px;
+
+}
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+.footer{
+    background:#F8EEDB;
+    padding-top:35px;
+    margin-top:40px;
+}
+
+/* Container */
+
+.footer-container{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:80px;
+    padding:0 70px 60px;
+}
+
+/* ===========================
+        LOGO
+=========================== */
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:22px;
+}
+
+.footer-logo img{
+    width:42px;
+}
+
+.footer-logo h2{
+    font-family:"Fraunces",serif;
+    font-size:25px;
+    color:#111;
+    font-weight:700;
+}
+
+/* About */
+
+.footer-about p{
+    font-family:"Plus Jakarta Sans",sans-serif;
+    font-size:16px;
+    color:#555;
+    line-height:1.8;
+    max-width:320px;
+    margin-bottom:28px;
+}
+
+/* ===========================
+      SOCIAL ICONS
+=========================== */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+}
+
+.social-icons a{
+
+    width:48px;
+    height:48px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.social-icons i{
+    font-size:16px;
+    color:#222;
+}
+
+/* ===========================
+      LINKS
+=========================== */
+
+.footer-links h3{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#111;
+
+    margin-bottom:24px;
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:16px;
+
+    color:#555;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+}
+
+/* ===========================
+      BOTTOM
+=========================== */
+
+.footer-bottom{
+
+    border-top:1px solid #E4D9C7;
+
+    text-align:center;
+
+    padding:24px 20px;
+}
+
+.footer-bottom p{
+
+    font-family:"Plus Jakarta Sans",sans-serif;
+
+    font-size:14px;
+
+    color:#555;
+}
+/* ===========================
+   FOOTER HOVER EFFECTS
+=========================== */
+
+/* Smooth Transition */
+
+.footer-logo,
+.footer-links a,
+.social-icons a,
+.footer-bottom p{
+    transition:all .3s ease;
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.social-icons a:hover{
+
+    background:#2F5A3C;
+
+    transform:translateY(-5px);
+}
+
+.social-icons a:hover i{
+
+    color:#fff;
+}
+
+/* ===========================
+   FOOTER LINKS
+=========================== */
+
+.footer-links a:hover{
+
+    color:#8B5E3C;
+
+    transform:translateX(6px);
+}
+
+/* Footer Heading */
+
+.footer-links h3{
+
+    transition:.3s;
+}
+
+.footer-links:hover h3{
+
+    color:#8B5E3C;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.footer-logo img{
+
+    transition:.3s;
+}
+
+.footer:hover .footer-logo img{
+
+    transform:rotate(-8deg);
+}
+
+.footer-logo h2{
+
+    transition:.3s;
+}
+
+.footer:hover .footer-logo h2{
+
+    color:#8B5E3C;
+}
+
+/* ===========================
+   ABOUT TEXT
+=========================== */
+
+.footer-about p{
+
+    transition:.3s;
+}
+
+.footer-about:hover p{
+
+    color:#444;
+}
+
+/* ===========================
+   FOOTER BOTTOM
+=========================== */
+
+.footer-bottom{
+
+    transition:.3s;
+}
+
+.footer-bottom:hover{
+
+    background:#F5E8D3;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:1100px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:50px;
+
+padding:0 40px 50px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.footer{
+
+padding-top:50px;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+padding:0 25px 40px;
+
+}
+
+.footer-logo{
+
+justify-content:center;
+
+}
+
+.footer-about p{
+
+margin:auto;
+
+margin-bottom:25px;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.footer-links{
+
+align-items:center;
+
+}
+
+.footer-links h3{
+
+margin-top:10px;
+
+}
+
+.footer-bottom{
+
+font-size:15px;
+
+padding:18px;
+
+}
+
+}

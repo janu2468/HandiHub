@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seller Dashboard | HandiHub</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="orders.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="">
+
+            <h2>HandiHub</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <ul class="menu">
+
+    <li class="active">
+        <a href="seller-dashboard.html">
+            <i class="ri-dashboard-line"></i>
+            <span>Overview</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="products.html">
+            <i class="ri-box-3-line"></i>
+            <span>Products</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="orders.html">
+            <i class="ri-shopping-cart-line"></i>
+            <span>Orders</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="add-product.html">
+            <i class="ri-add-circle-line"></i>
+            <span>Add Product</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="ai-photo-enhancer.html">
+            <i class="ri-magic-line"></i>
+            <span>AI Photo Enhancer</span>
+        </a>
+    </li>
+
+</ul>
+
+        </ul>
+
+        <div class="bottom-menu">
+
+            <a href="index.html">
+                <i class="ri-arrow-left-line"></i>
+                Back to Store
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <h2>Seller Dashboard</h2>
+
+            <div class="top-icons">
+
+                <i class="ri-notification-3-line"></i>
+
+                <div class="profile">
+                    L
+                </div>
+
+            </div>
+
+        </header>
+<!-- ===========================
+        PAGE HEADER
+=========================== -->
+
+<section class="page-header">
+
+    <div>
+
+        <h1>Orders</h1>
+
+        <p>All incoming and completed orders</p>
+
+    </div>
+
+    <button class="report-btn">
+
+        <i class="ri-download-line"></i>
+
+        Sales Report
+
+    </button>
+
+</section>
+
+<!-- ===========================
+        ORDERS TABLE
+=========================== -->
+
+<section class="orders-table">
+
+    <!-- Table Header -->
+
+    <div class="table-head">
+
+        <div>Order</div>
+
+        <div>Customer</div>
+
+        <div>Items</div>
+
+        <div>Total</div>
+
+        <div>Status</div>
+
+        <div>Date</div>
+
+    </div>
+
+    <!-- ================= Row 1 ================= -->
+
+    <div class="order-row">
+
+        <div>ORD8241</div>
+
+        <div>Priya S.</div>
+
+        <div>2</div>
+
+        <div class="price">₹1899</div>
+
+        <div>
+
+            <span class="status packed">
+                Packed
+            </span>
+
+        </div>
+
+        <div class="date">
+            2h ago
+        </div>
+
+    </div>
+
+    <!-- ================= Row 2 ================= -->
+
+    <div class="order-row">
+
+        <div>ORD8237</div>
+
+        <div>Arjun M.</div>
+
+        <div>1</div>
+
+        <div class="price">₹599</div>
+
+        <div>
+
+            <span class="status shipped">
+                Shipped
+            </span>
+
+        </div>
+
+        <div class="date">
+            5h ago
+        </div>
+
+    </div>
+
+    <!-- ================= Row 3 ================= -->
+
+    <div class="order-row">
+
+        <div>ORD8231</div>
+
+        <div>Sneha R.</div>
+
+        <div>3</div>
+
+        <div class="price">₹3247</div>
+
+        <div>
+
+            <span class="status delivered">
+                Delivered
+            </span>
+
+        </div>
+
+        <div class="date">
+            1d ago
+        </div>
+
+    </div>
+
+    <!-- ================= Row 4 ================= -->
+
+    <div class="order-row">
+
+        <div>ORD8228</div>
+
+        <div>Rahul V.</div>
+
+        <div>1</div>
+
+        <div class="price">₹899</div>
+
+        <div>
+
+            <span class="status pending">
+                Pending
+            </span>
+
+        </div>
+
+        <div class="date">
+            2d ago
+        </div>
+
+    </div>
+
+    <!-- ================= Row 5 ================= -->
+
+    <div class="order-row">
+
+        <div>ORD8224</div>
+
+        <div>Ananya K.</div>
+
+        <div>4</div>
+
+        <div class="price">₹4520</div>
+
+        <div>
+
+            <span class="status packed">
+                Packed
+            </span>
+
+        </div>
+
+        <div class="date">
+            3d ago
+        </div>
+
+    </div>
+
+    <!-- ================= Row 6 ================= -->
+
+    <div class="order-row">
+
+        <div>ORD8218</div>
+
+        <div>Vikram P.</div>
+
+        <div>2</div>
+
+        <div class="price">₹1499</div>
+
+        <div>
+
+            <span class="status delivered">
+                Delivered
+            </span>
+
+        </div>
+
+        <div class="date">
+            4d ago
+        </div>
+
+    </div>
+
+</section>
+<!-- Chart JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="orders.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seller Dashboard | HandiHub</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="add-product.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="">
+
+            <h2>HandiHub</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <ul class="menu">
+
+    <li class="active">
+        <a href="seller-dashboard.html">
+            <i class="ri-dashboard-line"></i>
+            <span>Overview</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="products.html">
+            <i class="ri-box-3-line"></i>
+            <span>Products</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="orders.html">
+            <i class="ri-shopping-cart-line"></i>
+            <span>Orders</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="add-product.html">
+            <i class="ri-add-circle-line"></i>
+            <span>Add Product</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="ai-photo-enhancer.html">
+            <i class="ri-magic-line"></i>
+            <span>AI Photo Enhancer</span>
+        </a>
+    </li>
+
+</ul>
+
+        </ul>
+
+        <div class="bottom-menu">
+
+            <a href="index.html">
+                <i class="ri-arrow-left-line"></i>
+                Back to Store
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <h2>Seller Dashboard</h2>
+
+            <div class="top-icons">
+
+                <i class="ri-notification-3-line"></i>
+
+                <div class="profile">
+                    L
+                </div>
+
+            </div>
+
+        </header>
+    <!-- ==========================================
+            PAGE HEADER
+========================================== -->
+
+<section class="page-header">
+
+    <div class="page-title">
+
+        <h1>Add a new product</h1>
+
+        <p>
+            Fill in the details. The AI voice guide can walk you through each step.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            ADD PRODUCT SECTION
+========================================== -->
+
+<section class="add-product-container">
+
+    <!-- ================= LEFT SIDE ================= -->
+
+    <div class="image-card">
+
+        <h2>Product Image</h2>
+
+        <div class="upload-box" id="uploadBox">
+
+            <!-- Hidden File Input -->
+
+            <input
+                type="file"
+                id="productImage"
+                accept="image/*"
+                hidden
+            >
+
+            <!-- Preview Image -->
+
+            <img
+                id="previewImage"
+                src=""
+                alt="Preview"
+            >
+
+            <!-- Upload Content -->
+
+            <div class="upload-content" id="uploadContent">
+
+                <i class="ri-upload-2-line"></i>
+
+                <h3>Click to upload</h3>
+
+                <p>JPG or PNG, up to 10 MB</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= RIGHT SIDE ================= -->
+
+    <div class="details-card">
+
+        <form id="productForm">
+
+            <!-- Product Name -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Product name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Enter product name"
+                    required
+                >
+
+            </div>
+
+            <!-- Price + Stock -->
+
+            <div class="row">
+
+                <div class="form-group">
+
+                    <label>
+
+                        Price (₹)
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productPrice"
+                        placeholder="899"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+
+                        Stock
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="productStock"
+                        placeholder="10"
+                        required
+                    >
+
+                </div>
+
+            </div>
+            <!-- ================= CATEGORY ================= -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Category
+
+                </label>
+
+                <select id="productCategory" required>
+
+                    <option value="">Select Category</option>
+
+                    <option value="Pottery">Pottery</option>
+
+                    <option value="Baskets">Baskets</option>
+
+                    <option value="Dinnerware">Dinnerware</option>
+
+                    <option value="Wall Art">Wall Art</option>
+
+                    <option value="Planters">Planters</option>
+
+                    <option value="Textiles">Textiles</option>
+
+                    <option value="Home Decor">Home Decor</option>
+
+                    <option value="Handmade Gifts">Handmade Gifts</option>
+
+                </select>
+
+            </div>
+
+            <!-- ================= DESCRIPTION ================= -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Description
+
+                </label>
+
+                <textarea
+                    id="productDescription"
+                    rows="5"
+                    placeholder="Write about your handmade product..."
+                ></textarea>
+
+            </div>
+
+            <!-- ================= SOCIAL IMPACT ================= -->
+
+            <div class="form-group">
+
+                <label>
+
+                    Social Impact Story
+
+                </label>
+
+                <input
+                    type="text"
+                    id="impactStory"
+                    placeholder="e.g. Supports 12 women artisans"
+                >
+
+            </div>
+
+            <!-- ================= SAVE BUTTON ================= -->
+
+            <button
+                type="submit"
+                class="save-btn"
+            >
+
+                <i class="ri-save-3-line"></i>
+
+                Save Product
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+<script src="add-product.js"></script>
+
+</body>
+
+</html>

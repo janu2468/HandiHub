@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>HandiHub - Handmade Products</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="plate.css">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="HandiHub Logo">
+
+            <h2>HandiHub</h2>
+
+        </div>
+
+        <!-- Search Bar -->
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search handmade products...">
+
+        </div>
+
+        <!-- Navigation Menu -->
+
+        <nav>
+
+            <ul>
+
+                <ul>
+
+    <li><a href="index.html" class="active">Home</a></li>
+
+    <li><a href="collections.html">Collections</a></li>
+
+    <li><a href="new-arrival.html">New Arrivals</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+            </ul>
+
+        </nav>
+
+        <!-- Right Side Icons -->
+
+        <div class="header-icons">
+
+            <button class="seller-btn"
+onclick="window.location.href='seller.html'">
+    Become a Seller
+</button>
+<!-- Wishlist -->
+<a href="wish.html" class="wishlist-nav">
+    <i class="bi bi-heart"></i>
+    <span id="wishlistCount">0</span>
+</a>
+
+<!-- Notifications -->
+<a href="not.html"><i class="bi bi-bell"></i></a>
+
+<!-- Cart -->
+<a href="cart.html" class="cart-nav">
+    <i class="bi bi-cart3"></i>
+    <span id="cartCount">0</span>
+</a>
+
+<!-- Profile -->
+<a href="man.html"><i class="bi bi-person"></i></a>
+
+        </div>
+
+    </header>
+
+<!--product-->
+<section class="product-page" data-id="basket">
+
+    <div class="product-left">
+
+        <img src="images/basket.jpg" alt="Handwoven Market Basket">
+
+    </div>
+
+    <div class="product-right">
+
+        <p class="category">BASKETS</p>
+
+        <h1>Handwoven Market Basket</h1>
+
+        <div class="rating">
+            ⭐ 4.9 <span>182 reviews</span>
+        </div>
+
+        <div class="price">
+
+            <span class="new-price">₹599</span>
+
+            <span class="old-price">₹799</span>
+
+            <span class="save">Save ₹200</span>
+
+        </div>
+
+        <p class="description">
+          A beautifully handwoven basket made from natural materials, perfect for storage, shopping, and everyday use.
+        </p>
+
+        <div class="seller-box">
+
+            <img src="images/seller1.jpg">
+
+            <div>
+
+                <h4>Ravi Krishna</h4>
+
+                <p>Kanchipuram, Tamil Nadu • Handloom Weaving</p>
+
+            </div>
+
+        </div>
+
+        <div class="impact">
+
+            <h4>🌿 Social Impact</h4>
+
+            <p>Sustainable production, zero waste kiln.</p>
+
+        </div>
+
+         <div class="actions">
+
+            <div class="quantity">
+
+    <button id="minus">-</button>
+
+    <span id="qty">1</span>
+
+    <button id="plus">+</button>
+
+
+            </div>
+
+             <button class="add-cart" onclick="addToCart()">
+    Add to Cart
+</button>
+
+<button class="buy" onclick="buyNow()">
+    Buy Now
+</button>
+
+
+
+        </div>
+
+        <div class="features">
+
+            <div>🚚 Free Shipping</div>
+
+            <div>↩️ 7 Days Return</div>
+
+            <div>✔ Authentic Handmade</div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+         FOOTER
+=========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo & About -->
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <img src="images/logo.png" alt="HandiHub Logo">
+
+                <h2>HandiHub</h2>
+
+            </div>
+
+            <p>
+                Handmade goods that support artisans,
+                women entrepreneurs, and rural
+                communities across India.
+            </p>
+
+            <!-- Social Icons -->
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Shop -->
+
+        <div class="footer-links">
+
+            <h3>Shop</h3>
+
+            <a href="#">Collections</a>
+
+            <a href="#">New Arrivals</a>
+
+            <a href="#">Wishlist</a>
+
+            <a href="#">Cart</a>
+
+        </div>
+
+        <!-- Sellers -->
+
+        <div class="footer-links">
+
+            <h3>Sellers</h3>
+
+            <a href="#">Become a Seller</a>
+
+            <a href="#">Seller Login</a>
+
+            <a href="#">Dashboard</a>
+
+        </div>
+
+        <!-- Support -->
+
+        <div class="footer-links">
+
+            <h3>Support</h3>
+
+            <a href="#">Contact</a>
+
+            <a href="#">Track Order</a>
+
+            <a href="#">Shipping</a>
+
+            <a href="#">Returns</a>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 HandiHub. Handmade with ❤️ in India.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="wc.js"></script>
+
+</body>
+</html>

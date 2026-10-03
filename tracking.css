@@ -1,0 +1,1003 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: "Inter", Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #faf8f4,
+            #f7f5f0,
+            #fdf9f3
+        );
+
+    color: #29251f;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.tracking-header {
+
+    height: 78px;
+
+    padding: 0 70px;
+
+    background:
+        rgba(255,255,255,.92);
+
+    border-bottom:
+        1px solid #eee7df;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.logo img {
+
+    width: 42px;
+
+    height: 42px;
+
+    object-fit: contain;
+
+}
+
+
+.logo h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+}
+
+
+.home-link {
+
+    text-decoration: none;
+
+    color: #5f6f3c;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.tracking-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 25px 80px;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.page-heading {
+
+    margin-bottom: 30px;
+
+}
+
+
+.page-heading > span {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: #7b8b52;
+
+}
+
+
+.page-heading h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    margin: 8px 0;
+
+}
+
+
+.page-heading p {
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   ORDER HEADER
+========================================= */
+
+.order-header-card {
+
+    background: white;
+
+    border: 1px solid #eee7df;
+
+    border-radius: 20px;
+
+    padding: 22px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.order-info {
+
+    display: flex;
+
+    gap: 55px;
+
+}
+
+
+.order-info div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+
+.order-info span {
+
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+
+    color: #999;
+
+    font-weight: 600;
+
+}
+
+
+.order-info strong {
+
+    font-size: 14px;
+
+}
+
+
+.status-badge {
+
+    padding: 9px 15px;
+
+    background: #f0f5e6;
+
+    color: #627441;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.status-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #758a4a;
+
+    animation: pulse 1.5s infinite;
+
+}
+
+
+@keyframes pulse {
+
+    0%,100% {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+    50% {
+
+        transform: scale(1.4);
+
+        opacity: .5;
+
+    }
+
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card {
+
+    background: white;
+
+    border: 1px solid #eee7df;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.product-image {
+
+    width: 105px;
+
+    height: 105px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    background: #f4f0ea;
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.product-details {
+
+    flex: 1;
+
+}
+
+
+.product-details > span {
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #999;
+
+    font-weight: 700;
+
+}
+
+
+.product-details h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    margin: 7px 0 13px;
+
+}
+
+
+.product-info-row {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.product-info-row p {
+
+    font-size: 13px;
+
+    color: #777;
+
+}
+
+
+.product-info-row strong {
+
+    color: #29251f;
+
+}
+
+
+.delivery-estimate {
+
+    min-width: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    background: #faf8f3;
+
+    border-radius: 13px;
+
+}
+
+
+.delivery-estimate > i {
+
+    font-size: 23px;
+
+    color: #6d7e48;
+
+}
+
+
+.delivery-estimate div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.delivery-estimate span {
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #999;
+
+}
+
+
+.delivery-estimate strong {
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================
+   TRACKING CARD
+========================================= */
+
+.tracking-card {
+
+    background: white;
+
+    border: 1px solid #eee7df;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.tracking-title {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eee7df;
+
+}
+
+
+.tracking-title span {
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #8a8a8a;
+
+    font-weight: 700;
+
+}
+
+
+.tracking-title h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    margin-top: 5px;
+
+}
+
+
+.tracking-title > i {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: #f0f4e7;
+
+    color: #687a46;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+
+    position: relative;
+
+    padding: 35px 10px 15px;
+
+}
+
+
+/* vertical line */
+
+.timeline-line {
+
+    position: absolute;
+
+    left: 31px;
+
+    top: 43px;
+
+    bottom: 48px;
+
+    width: 3px;
+
+    background: #e5e2dc;
+
+    border-radius: 5px;
+
+}
+
+
+.timeline-progress {
+
+    width: 100%;
+
+    height: 0%;
+
+    background: #75884e;
+
+    border-radius: 5px;
+
+    transition: height 1s ease;
+
+}
+
+
+/* =========================================
+   TIMELINE STEP
+========================================= */
+
+.timeline-step {
+
+    position: relative;
+
+    display: flex;
+
+    gap: 22px;
+
+    min-height: 100px;
+
+}
+
+
+.step-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #f3f1ed;
+
+    border: 4px solid white;
+
+    box-shadow:
+        0 0 0 1px #ddd8d0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #aaa;
+
+    z-index: 2;
+
+    transition: .4s;
+
+}
+
+
+.step-content {
+
+    padding-top: 3px;
+
+}
+
+
+.step-content h3 {
+
+    font-size: 15px;
+
+    margin-bottom: 6px;
+
+    color: #999;
+
+}
+
+
+.step-content p {
+
+    font-size: 12px;
+
+    color: #aaa;
+
+    line-height: 1.6;
+
+}
+
+
+.step-date {
+
+    display: block;
+
+    font-size: 10px;
+
+    color: #aaa;
+
+    margin-top: 6px;
+
+}
+
+
+/* =========================================
+   COMPLETED STEP
+========================================= */
+
+.timeline-step.completed .step-icon {
+
+    background: #75884e;
+
+    color: white;
+
+    box-shadow:
+        0 0 0 1px #75884e;
+
+}
+
+
+.timeline-step.completed .step-content h3 {
+
+    color: #29251f;
+
+}
+
+
+.timeline-step.completed .step-content p {
+
+    color: #777;
+
+}
+
+
+.timeline-step.completed .step-date {
+
+    color: #75884e;
+
+    font-weight: 600;
+
+}
+
+
+/* CURRENT STEP */
+
+.timeline-step.current .step-icon {
+
+    background: white;
+
+    color: #75884e;
+
+    box-shadow:
+        0 0 0 3px #dfe7cd;
+
+    animation: currentPulse 2s infinite;
+
+}
+
+
+@keyframes currentPulse {
+
+    0%,100% {
+
+        box-shadow:
+            0 0 0 3px #dfe7cd;
+
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 0 7px #eef3e4;
+
+    }
+
+}
+
+
+/* =========================================
+   BOTTOM CARDS
+========================================= */
+
+.bottom-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.info-card {
+
+    background: white;
+
+    border: 1px solid #eee7df;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+}
+
+
+.info-card-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.info-card-heading i {
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 10px;
+
+    background: #f0f4e7;
+
+    color: #687a46;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.info-card-heading h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+}
+
+
+.address {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #777;
+
+}
+
+
+.protection-text {
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #777;
+
+}
+
+
+.support-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 15px;
+
+    color: #637442;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   BACK
+========================================= */
+
+.back-shopping {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+.back-shopping a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #637442;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .tracking-header {
+
+        padding: 0 20px;
+
+    }
+
+
+    .tracking-container {
+
+        padding: 35px 15px 60px;
+
+    }
+
+
+    .order-header-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .order-info {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 15px;
+
+    }
+
+
+    .product-card {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .delivery-estimate {
+
+        width: 100%;
+
+    }
+
+
+    .bottom-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .page-heading h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .order-info {
+
+        flex-direction: column;
+
+    }
+
+
+    .product-image {
+
+        width: 85px;
+
+        height: 85px;
+
+    }
+
+
+    .tracking-card {
+
+        padding: 20px;
+
+    }
+
+
+    .timeline {
+
+        padding-left: 0;
+
+    }
+
+}

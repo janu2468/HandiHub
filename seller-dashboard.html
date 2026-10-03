@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seller Dashboard | HandiHub</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="seller-dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="">
+
+            <h2>HandiHub</h2>
+
+        </div>
+
+
+    <ul class="menu">
+
+    <li>
+        <a href="seller-dashboard.html">
+            <i class="ri-dashboard-line"></i>
+            <span>Overview</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="products.html">
+            <i class="ri-box-3-line"></i>
+            <span>Products</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="orders.html">
+            <i class="ri-shopping-cart-line"></i>
+            <span>Orders</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="add-product.html">
+            <i class="ri-add-circle-line"></i>
+            <span>Add Product</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="ai-photo-enhancer.html">
+            <i class="ri-magic-line"></i>
+            <span>AI Photo Enhancer</span>
+        </a>
+    </li>
+
+</ul>
+
+        </ul>
+
+        <div class="bottom-menu">
+
+            <a href="index.html">
+                <i class="ri-arrow-left-line"></i>
+                Back to Store
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <h2>Seller Dashboard</h2>
+
+            <div class="top-icons">
+
+                <i class="ri-notification-3-line"></i>
+
+                <div class="profile">
+                    L
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Greeting -->
+
+        <section class="greeting">
+
+            <h1>
+                Good morning,
+                Lakshmi
+                <span>👋</span>
+            </h1>
+
+            <p>
+                Here's how your studio is doing today.
+            </p>
+
+        </section>
+
+        <!-- Stats -->
+
+        <section class="stats">
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="ri-wallet-3-line"></i>
+
+                </div>
+
+                <div class="growth">
+
+                    +12.4%
+
+                </div>
+
+                <h2>₹42,500</h2>
+
+                <p>Total Revenue</p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="ri-shopping-bag-line"></i>
+
+                </div>
+
+                <div class="growth">
+
+                    +8.1%
+
+                </div>
+
+                <h2>62</h2>
+
+                <p>Total Orders</p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="ri-box-3-line"></i>
+
+                </div>
+
+                <div class="growth">
+
+                    +2
+
+                </div>
+
+                <h2>6</h2>
+
+                <p>Products</p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="ri-time-line"></i>
+
+                </div>
+
+                <div class="growth">
+
+                    urgent
+
+                </div>
+
+                <h2>3</h2>
+
+                <p>Pending Orders</p>
+
+            </div>
+
+        </section>
+
+        <!-- Charts -->
+
+        <section class="chart-section">
+
+            <!-- Graph -->
+
+            <div class="graph-card">
+
+                <div class="graph-head">
+
+                    <div>
+
+                        <h2>Revenue this week</h2>
+
+                        <p>Last 7 days</p>
+
+                    </div>
+
+                    <span>+18.2%</span>
+
+                </div>
+
+                <canvas id="revenueChart"></canvas>
+
+            </div>
+
+            <!-- Activity -->
+
+            <div class="activity-card">
+
+                <h2>Recent Activity</h2>
+
+                <ul>
+
+                    <li>
+
+                        <span class="dot"></span>
+
+                        <div>
+
+                            <h4>New order #ORD8241</h4>
+
+                            <p>2 min ago</p>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <span class="dot"></span>
+
+                        <div>
+
+                            <h4>Payment received ₹1,499</h4>
+
+                            <p>1 hour ago</p>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <span class="dot"></span>
+
+                        <div>
+
+                            <h4>Handwoven Basket stock low</h4>
+
+                            <p>3 hours ago</p>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <span class="dot"></span>
+
+                        <div>
+
+                            <h4>5-star review on Terracotta Vase</h4>
+
+                            <p>Yesterday</p>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+        <!-- ===========================
+        QUICK ACTIONS
+=========================== -->
+
+<section class="quick-actions">
+
+    <div class="quick-header">
+
+        <h2>Quick actions</h2>
+
+        <a href="products.html">
+            Manage products
+            <i class="ri-arrow-right-line"></i>
+        </a>
+
+    </div>
+
+    <div class="quick-grid">
+
+        <!-- Add Product -->
+
+        <a href="add-product.html" class="quick-card">
+
+            <div class="quick-icon">
+
+                <i class="ri-arrow-right-up-line"></i>
+
+            </div>
+
+            <div class="quick-content">
+
+                <h3>Add a product</h3>
+
+                <p>
+                    List a new handmade item in minutes.
+                </p>
+
+            </div>
+
+        </a>
+
+        <!-- AI Photo -->
+
+        <a href="ai-photo-enhancer.html" class="quick-card">
+
+            <div class="quick-icon">
+
+                <i class="ri-magic-line"></i>
+
+            </div>
+
+            <div class="quick-content">
+
+                <h3>Enhance photos with AI</h3>
+
+                <p>
+                    Improve lighting, remove background and sharpen images.
+                </p>
+
+            </div>
+
+        </a>
+
+        <!-- Orders -->
+
+        <a href="orders.html" class="quick-card">
+
+            <div class="quick-icon">
+
+                <i class="ri-shopping-bag-3-line"></i>
+
+            </div>
+
+            <div class="quick-content">
+
+                <h3>View orders</h3>
+
+                <p>
+                    Track shipping, payments and customer returns.
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+</div>
+
+<!-- Chart JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="seller-dashboard.js"></script>
+
+</body>
+
+</html>

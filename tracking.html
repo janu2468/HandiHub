@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Track Order - HandiHub</title>
+
+    <link rel="stylesheet"
+          href="tracking.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="tracking-header">
+
+    <div class="logo">
+
+        <img
+            src="images/logo.png"
+            alt="HandiHub"
+        >
+
+        <h2>HandiHub</h2>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="home-link"
+    >
+
+        <i class="bi bi-house"></i>
+
+        Home
+
+    </a>
+
+</header>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main class="tracking-container">
+
+
+    <!-- PAGE TITLE -->
+
+    <div class="page-heading">
+
+        <span>
+            ORDER TRACKING
+        </span>
+
+        <h1>
+            Track Your Order
+        </h1>
+
+        <p>
+            Follow your handmade product
+            on its journey to you.
+        </p>
+
+    </div>
+
+
+
+    <!-- =====================================
+         ORDER HEADER
+    ====================================== -->
+
+    <section class="order-header-card">
+
+
+        <div class="order-info">
+
+            <div>
+
+                <span>
+                    ORDER ID
+                </span>
+
+                <strong id="orderId">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    ORDER DATE
+                </span>
+
+                <strong id="orderDate">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    TOTAL
+                </span>
+
+                <strong id="orderTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="status-badge">
+
+            <span class="status-dot"></span>
+
+            <span id="currentStatus">
+                Order Confirmed
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         ORDER PRODUCT
+    ====================================== -->
+
+    <section class="product-card">
+
+
+        <div class="product-image">
+
+            <img
+                id="productImage"
+                src=""
+                alt="Ordered Product"
+            >
+
+        </div>
+
+
+        <div class="product-details">
+
+            <span id="productCategory">
+                HANDMADE
+            </span>
+
+
+            <h2 id="productTitle">
+                Product Name
+            </h2>
+
+
+            <div class="product-info-row">
+
+                <p>
+                    Quantity:
+                    <strong id="productQuantity">
+                        1
+                    </strong>
+                </p>
+
+
+                <p>
+                    Price:
+                    <strong id="productPrice">
+                        ₹0
+                    </strong>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="delivery-estimate">
+
+            <i class="bi bi-truck"></i>
+
+            <div>
+
+                <span>
+                    ESTIMATED DELIVERY
+                </span>
+
+                <strong id="deliveryDate">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         TRACKING TIMELINE
+    ====================================== -->
+
+    <section class="tracking-card">
+
+
+        <div class="tracking-title">
+
+            <div>
+
+                <span>
+                    ORDER JOURNEY
+                </span>
+
+                <h2>
+                    Track Your Package
+                </h2>
+
+            </div>
+
+
+            <i class="bi bi-box-seam"></i>
+
+        </div>
+
+
+
+        <div class="timeline">
+
+
+            <!-- PROGRESS LINE -->
+
+            <div class="timeline-line">
+
+                <div
+                    class="timeline-progress"
+                    id="timelineProgress"
+                ></div>
+
+            </div>
+
+
+
+            <!-- STEP 1 -->
+
+            <div
+                class="timeline-step completed"
+                data-step="1"
+            >
+
+                <div class="step-icon">
+
+                    <i class="bi bi-check-lg"></i>
+
+                </div>
+
+
+                <div class="step-content">
+
+                    <h3>
+                        Order Confirmed
+                    </h3>
+
+                    <p>
+                        Your order has been successfully placed.
+                    </p>
+
+                    <span class="step-date">
+                        Order placed
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STEP 2 -->
+
+            <div
+                class="timeline-step"
+                data-step="2"
+            >
+
+                <div class="step-icon">
+
+                    <i class="bi bi-box-seam"></i>
+
+                </div>
+
+
+                <div class="step-content">
+
+                    <h3>
+                        Preparing Order
+                    </h3>
+
+                    <p>
+                        The artisan is preparing your handmade product.
+                    </p>
+
+                    <span class="step-date">
+                        Processing
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STEP 3 -->
+
+            <div
+                class="timeline-step"
+                data-step="3"
+            >
+
+                <div class="step-icon">
+
+                    <i class="bi bi-truck"></i>
+
+                </div>
+
+
+                <div class="step-content">
+
+                    <h3>
+                        Shipped
+                    </h3>
+
+                    <p>
+                        Your package has left the artisan.
+                    </p>
+
+                    <span class="step-date">
+                        On the way
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STEP 4 -->
+
+            <div
+                class="timeline-step"
+                data-step="4"
+            >
+
+                <div class="step-icon">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                </div>
+
+
+                <div class="step-content">
+
+                    <h3>
+                        Out for Delivery
+                    </h3>
+
+                    <p>
+                        Your package is arriving today.
+                    </p>
+
+                    <span class="step-date">
+                        Almost there
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STEP 5 -->
+
+            <div
+                class="timeline-step"
+                data-step="5"
+            >
+
+                <div class="step-icon">
+
+                    <i class="bi bi-house-heart"></i>
+
+                </div>
+
+
+                <div class="step-content">
+
+                    <h3>
+                        Delivered
+                    </h3>
+
+                    <p>
+                        Your handmade product has arrived.
+                    </p>
+
+                    <span class="step-date">
+                        Delivered
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         DELIVERY ADDRESS
+    ====================================== -->
+
+    <section class="bottom-grid">
+
+
+        <div class="info-card">
+
+            <div class="info-card-heading">
+
+                <i class="bi bi-geo-alt"></i>
+
+                <h2>
+                    Delivery Address
+                </h2>
+
+            </div>
+
+
+            <div
+                class="address"
+                id="deliveryAddress"
+            >
+
+                --
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-card">
+
+            <div class="info-card-heading">
+
+                <i class="bi bi-shield-check"></i>
+
+                <h2>
+                    Order Protection
+                </h2>
+
+            </div>
+
+
+            <p class="protection-text">
+
+                Your order is protected.
+                If there is any issue with your
+                delivery, our support team is here
+                to help.
+
+            </p>
+
+
+            <a
+                href="contact.html"
+                class="support-link"
+            >
+
+                Need Help?
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BACK BUTTON -->
+
+    <div class="back-shopping">
+
+        <a href="collections.html">
+
+            <i class="bi bi-arrow-left"></i>
+
+            Continue Shopping
+
+        </a>
+
+    </div>
+
+
+</main>
+
+
+
+<script src="tracking.js"></script>
+
+</body>
+
+</html>

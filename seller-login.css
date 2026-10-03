@@ -1,0 +1,381 @@
+/* ===========================
+   HEADER
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    background:#f8f6f2;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    height:82px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* ================= LOGO ================= */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo h2{
+    font-size:25px;
+    color:#8B5E3C;
+    font-family:"Fraunces", serif;
+    font-weight:650;
+}
+
+/* ================= SEARCH ================= */
+
+.search-box{
+    width:420px;
+    display:flex;
+    align-items:center;
+}
+
+.search-box input{
+    width:100%;
+    height:46px;
+    padding:0 18px;
+    border:1px solid #ddd;
+    border-radius:25px;
+    outline:none;
+    font-size:15px;
+    background:#fafafa;
+    transition:.3s;
+     font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.search-box input:focus{
+    border-color:#8B5E3C;
+    background:#fff;
+}
+
+/* Hide old search button */
+.search-box button{
+    display:none;
+}
+
+/* ================= NAVIGATION ================= */
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#555;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+nav ul li a:hover{
+    color:#8B5E3C;
+}
+
+/* Active Menu */
+
+nav ul li:first-child a{
+    background:#f5efe8;
+    color:#8B5E3C;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.header-icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/* Seller Button */
+
+.header-icons button{
+    height:42px;
+    padding:0 20px;
+    border:none;
+    border-radius:25px;
+    background:#8B5E3C;
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+    font-family:"Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.header-icons button:hover{
+    background:#6d4528;
+}
+
+/* Icons */
+
+.header-icons a{
+    color:#333;
+    font-size:22px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.header-icons a:hover{
+    color:#8B5E3C;
+}
+
+/*seller login*/
+.login-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.login-card{
+
+    width:420px;
+
+    background:#fff;
+
+    border:1px solid #E5D7C7;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.login-card h1{
+
+    font-size:35px;
+
+    font-family:Georgia,serif;
+
+    color:#1F1915;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#666;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+
+}
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+    font-size:14px;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    height:52px;
+
+    border:1px solid #E4D6C4;
+
+    border-radius:50px;
+
+    padding:0 20px;
+
+    font-size:14px;
+
+    outline:none;
+
+}
+
+.input-group input:focus{
+
+    border-color:#2D5A3D;
+
+}
+
+
+button{
+
+    width:100%;
+
+    height:54px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#2D5A3D;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#21432E;
+
+}
+
+.register{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#555;
+
+}
+
+.register a{
+
+    text-decoration:none;
+
+    color:#2D5A3D;
+
+    font-weight:600;
+
+}
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+.wishlist-nav{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:#222;
+    text-decoration:none;
+}
+
+#wishlistCount{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    background:#e63946;
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    min-width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 5px;
+}
+
+.wishlist.active i,
+.wishlist-btn.active i{
+    color:#e63946;
+}
+
+/* Cart Button */
+
+.cart-btn{
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+    border:1px solid #ddd;
+
+    background:#fff;
+    cursor:pointer;
+}
+
+.cart-btn i{
+    font-size:18px;
+    color:#333;
+}
+.cart-nav{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:#222;
+    text-decoration:none;
+}
+
+#cartCount{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    background:#2F5A3C;
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    min-width:18px;
+    height:18px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 5px;
+}

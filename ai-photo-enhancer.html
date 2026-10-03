@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seller Dashboard | HandiHub</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="ai-photo-enhancer.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="">
+
+            <h2>HandiHub</h2>
+
+        </div>
+
+        <ul class="menu">
+
+            <ul class="menu">
+
+    <li class="active">
+        <a href="seller-dashboard.html">
+            <i class="ri-dashboard-line"></i>
+            <span>Overview</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="products.html">
+            <i class="ri-box-3-line"></i>
+            <span>Products</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="orders.html">
+            <i class="ri-shopping-cart-line"></i>
+            <span>Orders</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="add-product.html">
+            <i class="ri-add-circle-line"></i>
+            <span>Add Product</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="ai-photo-enhancer.html">
+            <i class="ri-magic-line"></i>
+            <span>AI Photo Enhancer</span>
+        </a>
+    </li>
+
+</ul>
+
+        </ul>
+
+        <div class="bottom-menu">
+
+            <a href="index.html">
+                <i class="ri-arrow-left-line"></i>
+                Back to Store
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <h2>Seller Dashboard</h2>
+
+            <div class="top-icons">
+
+                <i class="ri-notification-3-line"></i>
+
+                <div class="profile">
+                    L
+                </div>
+
+            </div>
+
+        </header>
+<!-- ==========================================
+        AI PHOTO ENHANCER
+=========================================== -->
+
+<section class="ai-enhancer">
+
+    <!-- Heading -->
+
+    <div class="page-heading">
+
+        <h1>
+
+            <i class="ri-magic-line"></i>
+
+            AI Photo Enhancer
+
+        </h1>
+
+        <p>
+
+            Turn everyday product photos into premium marketplace images.
+
+        </p>
+
+    </div>
+
+    <!-- Upload Screen -->
+
+    <div class="upload-screen" id="uploadScreen">
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+            hidden
+        >
+
+        <div class="upload-area" id="uploadArea">
+
+            <div class="upload-content">
+
+                <i class="ri-upload-cloud-2-line"></i>
+
+                <h2>
+
+                    Upload a product photo
+
+                </h2>
+
+                <p>
+
+                    JPG, PNG or WEBP
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================
+            RESULT SCREEN
+    ==================================== -->
+
+    <div
+        class="editor-section"
+        id="editorSection"
+    >
+
+        <!-- Left -->
+
+        <div class="preview-card">
+
+            <div class="preview-grid">
+
+                <!-- Before -->
+
+                <div class="preview-column">
+
+                    <span class="label">
+
+                        BEFORE
+
+                    </span>
+
+                    <div class="image-frame">
+
+                        <img
+                            id="beforeImage"
+                            src=""
+                            alt=""
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- After -->
+
+                <div class="preview-column">
+
+                    <span class="label">
+
+                        AFTER
+
+                    </span>
+
+                    <div class="image-frame">
+
+                        <img
+                            id="afterImage"
+                            src=""
+                            alt=""
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="action-buttons">
+
+                <button id="enhanceBtn">
+
+                    <i class="ri-sparkling-line"></i>
+
+                    One-click Enhance
+
+                </button>
+
+                <button id="resetBtn">
+
+                    Reset
+
+                </button>
+                <button id="downloadBtn">
+    <i class="ri-download-line"></i>
+    Download
+</button>
+
+            </div>
+
+        </div>
+
+        <!-- Right Panel -->
+
+        <div class="tools-panel">
+
+            <h2>
+
+                Enhancements
+
+            </h2>
+
+            <button
+                class="tool active"
+                data-effect="background"
+            >
+
+                <span>
+
+                    <i class="ri-image-edit-line"></i>
+
+                </span>
+
+                Remove background
+
+            </button>
+
+            <button
+                class="tool"
+                data-effect="lighting"
+            >
+
+                <span>
+
+                    <i class="ri-sun-line"></i>
+
+                </span>
+
+                Improve lighting
+
+            </button>
+
+            <button
+                class="tool"
+                data-effect="sharpness"
+            >
+
+                <span>
+
+                    <i class="ri-focus-2-line"></i>
+
+                </span>
+
+                Increase sharpness
+
+            </button>
+
+            <button
+                class="tool"
+                data-effect="crop"
+            >
+
+                <span>
+
+                    <i class="ri-crop-line"></i>
+
+                </span>
+
+                Auto crop
+
+            </button>
+
+            <button
+                class="tool"
+                data-effect="color"
+            >
+
+                <span>
+
+                    <i class="ri-palette-line"></i>
+
+                </span>
+
+                Enhance colors
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="ai-photo-enhancer.js"></script>
